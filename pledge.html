@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness & Cyber Safety</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#pledge.html" >
+                <i class="fas fa-shield-alt me-2"></i>Digital Wellness
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pledge.html">Pledge</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-content">
+        <div class="container">
+            <h1 class="text-center mb-5" style="animation: fadeInUp 0.8s ease-out;">Take the Digital Wellness Pledge</h1>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="form-container" style="animation: slideInLeft 0.8s ease-out 0.2s both;">
+                        <form id="pledgeForm" novalidate>
+                            <div class="mb-3" style="animation: fadeInUp 0.6s ease-out 0.6s both;">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please provide your full name.</div>
+                            </div>
+
+                            <div class="mb-3" style="animation: fadeInUp 0.6s ease-out 0.8s both;">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="valid-feedback">Valid email address!</div>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+
+                            <div class="mb-3" style="animation: fadeInUp 0.6s ease-out 1.0s both;">
+                                <label for="ageRange" class="form-label">Age Range *</label>
+                                <select class="form-select" id="ageRange" required>
+                                    <option value="">Choose your age range...</option>
+                                    <option value="16-18">16-18 years</option>
+                                    <option value="19-25">19-25 years</option>
+                                    <option value="26-35">26-35 years</option>
+                                    <option value="36-50">36-50 years</option>
+                                    <option value="50+">50+ years</option>
+                                </select>
+                                <div class="valid-feedback">Great choice!</div>
+                                <div class="invalid-feedback">Please select your age range.</div>
+                            </div>
+
+                            <div class="mb-3" style="animation: fadeInUp 0.6s ease-out 1.2s both;">
+                                <label class="form-label">Preferred Device *</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="device" id="smartphone" value="smartphone" required>
+                                    <label class="form-check-label" for="smartphone">Smartphone</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="device" id="laptop" value="laptop" required>
+                                    <label class="form-check-label" for="laptop">Laptop/Computer</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="device" id="tablet" value="tablet" required>
+                                    <label class="form-check-label" for="tablet">Tablet</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="device" id="all" value="all" required>
+                                    <label class="form-check-label" for="all">All of the above</label>
+                                </div>
+                                <div class="invalid-feedback">Please select your preferred device.</div>
+                            </div>
+
+                            <div class="mb-3" style="animation: fadeInUp 0.6s ease-out 1.4s both;">
+                                <label for="pledge" class="form-label">Your Digital Wellness Pledge *</label>
+                                <textarea class="form-control" id="pledge" rows="4" maxlength="500" required placeholder="Write your commitment to staying safe online... (max 500 characters)"></textarea>
+                                <div class="character-counter">
+                                    <span id="charCount">0</span>/500 characters
+                                </div>
+                                <div class="valid-feedback">Thank you for your commitment!</div>
+                                <div class="invalid-feedback">Please write your pledge (minimum 20 characters).</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100" style="animation: bounceIn 0.8s ease-out 1.6s both;">Submit My Pledge</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="form-illustration" style="animation: slideInRight 0.8s ease-out 0.4s both;">
+                        <i class="fas fa-user-shield"></i>
+                        <h4>Secure Your Future</h4>
+                        <p class="text-muted">By taking this pledge, you're committing to safer digital practices that will protect you and others online.</p>
+                        <div class="mt-4">
+                            <i class="fas fa-lock" style="font-size: 4rem; color: #0d6efd;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ganesan kaviyasri</p>
+            <p><small>Created for FED-Assigenment </small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
